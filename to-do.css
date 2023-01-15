@@ -1,0 +1,12 @@
+body {
+    font-size:20px;
+   font-family:Georgia;
+background: linear-gradient(0,green,yellow);
+  width:300px;
+  margin:auto;
+  border-style: solid;
+}
+
+main {
+  background-color: white
+}
