@@ -4,14 +4,34 @@ let addButton = document.querySelector("#add-button");
 let list = document.querySelector(".list")
 let userValue = document.querySelector(".itemValue")
 let itemCount = document.querySelector(".number-items")
+
 $(document).ready(function(){
    $("#hide").click(function(){
-     $("h3").hide();
+     $("h3").slideUp();
    });
    $("#show").click(function(){
-     $("h3").show();
+      $("h3").slideDown();
    });
+
+   $("#feedback").click(validateName);
 });
+
+function validateName() {
+   let nameAnswer = prompt("whats your name");
+   if (nameAnswer.validity.tooLong) {
+      document.open();
+      document.write("Name must be between 2-8 characters in length!")
+      document.close();
+   } else if (nameAnswer.validity.tooShort) {
+      document.open();
+      document.write("Name must be between 2-8 characters in length!")
+      document.close();
+   } else {
+      document.open();
+      document.write("Thank you for submitting your name!")
+      document.close();
+   } 
+ }
 let numberOfItems = 0
 addButton.addEventListener("click", function () {
    //create the elements
@@ -43,3 +63,4 @@ addButton.addEventListener("click", function () {
    numberOfItems++;
    itemCount.innerText = numberOfItems;
 });
+
