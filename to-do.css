@@ -1,14 +1,15 @@
 body {
   font-size:20px;
   font-family:Georgia;
-  background: linear-gradient(0,green,yellow);
-  width:300px;
-  margin:auto;
-  border-style: solid;
+  text-align: center;
 }
 
 main {
-  background-color: white
+  background-color: white;
+  width:300px;
+  margin:auto;
+  border-style: solid;
+  padding: 10px;
 }
 
 p {
@@ -19,18 +20,17 @@ a {
   margin-top: 20px;
   float: right;
 }
-a {
-	background-color:#44c767;
-	border-radius:28px;
-	border:1px solid #18ab29;
+a.delete {
+	background-color: red;
+	border:1px solid black;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
 	font-size:11px;
-	padding:16px 31px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+	width: 7px;
+	height: 7px;
 }
 a:hover {
 	background-color:#5cbf2a;
@@ -39,3 +39,53 @@ a:active {
 	position:relative;
 	top:1px;
 }
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+  }
+  
+  li {
+	float: left;
+  }
+
+  .item {
+	float: none;
+  }
+
+    li a {
+	display: block;
+	padding: 8px;
+  }
+
+  nav {
+	display:flex;
+	background-color: #dddddd;
+	justify-content: space-between;
+  }
+
+  .logo {
+    width: 50px;
+    margin-top: 5px;
+    height: 50px;
+  }
+
+  .change-colour {
+	border-radius: 100%;
+	width: 7px;
+	height:7px;
+	background-color: green;
+	border: 1px solid black;
+	margin-right: 5px;
+  }
+
+  footer {
+	background-color: white;
+	width:300px;
+	margin:auto;
+	border-style: solid;
+	padding: 10px;
+	margin-top: 20px;
+  }

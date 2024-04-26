@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,36 @@
     <link rel="stylesheet" href="to-do.css">
 </head>
 <body>
-    <h2 id="header" class="header">Add Item:</h2>
-    <input type="text" class="itemValue" placeholder = "add item to your list...">
-      
-       <button type="submit" id="add-button" class="add-button"> Add </button> 
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#list">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>   
+        <img src="./checklist.png" class="logo">
+    </nav>
+    <h1>Shopping List</h1>
   <main>  
+    <div>
+        <h2 id="header" class="header">Add Item:</h2>
+        <input type="text" class="itemValue" placeholder = "add item to your list...">
+        <button type="submit" id="add-button" class="add-button"> Add </button> 
+   </div>
+
    <ol class="list"><b>
 
    </ol>
-    
+   
+
+
   </main>
+  <footer>
+    <h2>Number of Items</h2>
+    <h3 class="number-items">0</h3>
+    
+    <button id="hide">Hide</button>
+    <button id="show">Show</button> 
+  </footer>
   <script src="to-do.js"></script>
 </body>
