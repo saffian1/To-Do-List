@@ -1,4 +1,5 @@
 
+// this function validates the form including the name, mobile and email
 function validateForm() {
     let name;
     if (document.getElementById("id1").validity.tooLong) {

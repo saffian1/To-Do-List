@@ -4,7 +4,7 @@ let addButton = document.querySelector("#add-button");
 let list = document.querySelector(".list")
 let userValue = document.querySelector(".itemValue")
 let itemCount = document.querySelector(".number-items")
-
+// this creates the animation on the "number of items"
 $(document).ready(function(){
    $("#hide").click(function(){
      $("h3").slideUp();
@@ -15,7 +15,7 @@ $(document).ready(function(){
 
    $("#feedback").click(validateName);
 });
-
+// function that validates the name on the form
 function validateName() {
    let nameAnswer = prompt("whats your name");
    if (nameAnswer.validity.tooLong) {
